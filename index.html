@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tetris</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <style>
+        #tetris {
+            border: 1px solid #000;
+            margin: 0 auto;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="tetris" width="240" height="400"></canvas>
+
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <div id="container">
+        <button id="start-btn" onclick="initialize()">開始</button>
+    </div>
+    <div id=button-set>
+        <input type="button" value="🔄" id="rotation" onclick="mino_rotasion()">
+        <input type="button" value="←" id="leftkey" onclick="mino_left()">
+        <input type="button" value="↓" id="underkey" onclick="mino_down()">
+        <input type="button" value="→" id="rightkey" onclick="mino_right()">
+    </div>
+</body>
+
+</html>
